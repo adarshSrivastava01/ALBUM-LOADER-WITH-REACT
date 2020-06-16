@@ -1,0 +1,11 @@
+.App {
+  height: 100%;
+  width: 100vw;
+  text-align: center;
+}
+
+.Loading {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 3.5rem;
+  color: white;
+}

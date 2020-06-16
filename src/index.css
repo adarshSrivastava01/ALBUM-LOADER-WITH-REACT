@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right bottom, #000ffc, #0ff0fc);
+}

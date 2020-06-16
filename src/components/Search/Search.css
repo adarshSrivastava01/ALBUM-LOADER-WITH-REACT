@@ -1,0 +1,32 @@
+.Home__input {
+  margin-top: -8rem;
+  padding: 0.5rem 4.5rem;
+  border-radius: 3px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  margin-bottom: 1rem;
+}
+
+.Home__input:focus {
+  transform: scale(1.3);
+  border-radius: 3px;
+  outline: none;
+  width: 60vw;
+  box-shadow: 10px 10px 10px rgba(75, 75, 77, 0.603);
+}
+
+.Home__input::placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media only screen and (max-width: 550px) {
+  .Home__input {
+    padding: 0.5rem 2rem;
+  }
+
+  .Home__input::placeholder {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
+
+.Song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+}
+
+.Song__heading {
+  width: 174px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 50;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ImageBox {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in;
+  position: relative;
+  /* box-shadow: 2px 0px 5px #fff; */
+  /* box-shadow: 10px 10px 27px -2px rgba(46,39,245,1); */
+}
+
+.ImageBox:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 174px;
+  width: 174px;
+  background-image: linear-gradient(to bottom, rgb(39, 38, 38), #fff);
+  opacity: 0.4;
+}
+
+.Icon {
+  z-index: 100;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  font-size: 36px;
+  color: #000ffc;
+}
+
+@media only screen and (max-width: 400px) {
+  .Song {
+    transform: scale(1.1);
+  }
+  .Overlay {
+    transform: scale(1.1);
+  }
+}

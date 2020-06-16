@@ -1,0 +1,17 @@
+.more-arrows {
+  width: 75px;
+  height: 65px;
+}
+
+polygon {
+  fill: #fff;
+  transition: all 0.2s ease-out;
+}
+
+polygon .arrow-middle {
+  opacity: 0.75;
+}
+
+polygon .arrow-top {
+  opacity: 0.5;
+}

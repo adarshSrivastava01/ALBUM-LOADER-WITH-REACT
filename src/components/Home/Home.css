@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@keyframes animate {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12em;
+  }
+}
+@keyframes blinking {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0);
+  }
+}
+.Home {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.Home__h1 {
+  color: transparent;
+  font-size: 6.5rem;
+  -webkit-text-stroke: 1px #fff;
+}
+.Home__container {
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.Home__text {
+  border-right: 1px solid #fff;
+  overflow: hidden;
+  width: 24em;
+  white-space: nowrap;
+}
+
+.Home__typewrite {
+  animation: animate 4s steps(1000) 1s 1 normal both,
+    blinking 0.8s steps(1000) infinite normal;
+}
+
+@media only screen and (max-width: 550px) {
+  .Home__h1 {
+    font-size: 3.5rem;
+  }
+}
